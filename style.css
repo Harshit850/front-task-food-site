@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+/* HEADER STYLING */
+header {
+  padding: 12px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #39a2db;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 span {
+  margin-right: 10px;
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 40px;
+  min-height: 80vh;
+}
+
+.card img {
+  height: 200px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.card {
+  margin: 30px;
+  position: relative;
+  top: 0;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  transition: top 0.2s ease-in-out;
+}
+
+.card:hover {
+  top: -20px;
+}
+
+/* FOOTER STYLING */
+footer {
+  color: white;
+  text-align: center;
+  background-color: #a2dbfa;
+}
+
+p.lead {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.lead span {
+  color: red;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
